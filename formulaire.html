@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .ip {
+            min-width: 100px;
+        }
+    
+        form {
+            display: inline-block;
+        }
+    
+        .dv {
+            float: left;
+            clear: left;
+            width: 100%;
+            padding-bottom: 1em;
+        }
+    
+        .lb {
+            float: left;
+            width: 10em;
+            margin-right: 1em;
+            text-align: right;
+        }
+    
+        .rdio {
+            display: block;
+            vertical-align: middle;
+        }
+    </style>
+    
+    <form action="">
+        <div class="dv">
+            <label class="lb" for="Mots-clefs">Mots-clefs : </label>
+            <input class="ip" type="text" name="Mots-clefs" id="Mots-clefs" required>
+        </div>
+    
+        <div class="dv">
+            <label class="lb" for="os-div">Vous profession : </label>
+    
+            <select multiple>
+                <option value="c1">Jouet</option>
+                <option value="c2">Location</option>
+                <option value="c3">Voitures</option>
+            </select>
+        </div>
+    
+        <div class="dv">
+            <label class="lb" for="dept">Département</label>
+    
+            <select class="form-control" id="dept" name="dept">
+                <option value="Bretagne">Bretagne</option>
+                <option value="Ile de France">Ile de France</option>
+            </select>
+        </div>
+    
+        <div class="dv" style="text-align: center;">
+            <input class="btn btn-success btn-lg" type="submit" value="Chercher">
+        </div>
+    </form>
+    
+    </div>
+    </form>
+</body>
+</html>

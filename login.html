@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"xml:lang="fr"lang="fr">
+  <head>
+    <title>Login</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+  </head>
+  <style>
+    .ip {
+      min-width: 100px;
+    }
+    form {
+      display: inline-block;
+    }
+    .dv {
+      float: left;
+      clear: left;
+      width: 100%;
+      padding-bottom: 1em;
+    }
+    .lb {
+      float: left;
+      width: 10em;
+      margin-right: 1em;
+      text-align: right;
+    }
+    .rdio {
+      display: block;
+      vertical-align: middle;
+    }
+  </style>
+  <body>
+
+    <div>
+      
+      <form method="POST" action="submit_login.php">
+        <p class="dv" style="text-align: center;"><b>Identification</b></p>
+
+        <div class="dv">
+          <label class="lb" for="login">Login</label>
+          <input class="ip" type="text" name="login" id="login" required>
+        </div>
+
+        <div class="dv">
+          <label class="lb" for="mdp">Mot de passe</label>
+          <input class="ip" type="password" name="mdp" id="mdp" required>
+        </div>
+
+        <div class="dv" style="padding-left: 100px;">
+          <input type="radio" id="rad1" name="rad" value="1">
+          <label for="rad1">Enseignant</label>
+          <input type="radio" id="rad2" name="rad" value="2">
+          <label for="rad2">Etudiant</label>
+        </div>
+
+        <div class="dv" style="text-align: center;">
+          <input type="submit" value="Chercher">
+        </div>
+      </form>
+
+    </div>
+
+
+  </body>
+</html>

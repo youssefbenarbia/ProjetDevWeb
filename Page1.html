@@ -1,0 +1,271 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <b>
+        <h1>Titre de niveau 1.</h1>
+    </b>
+    <b>
+        <h2>Titre de niveau 2.</h2>
+    </b>
+    <b>
+        <h3>Titre de niveau 3.</h3>
+    </b>
+    <b>
+        <h3>Titre de niveau 3.</h3>
+    </b>
+    <b>
+        <h2>Titre de niveau 2.</h2>
+    </b>
+    <b>
+        <h1>Titre de niveau 1.</h1>
+    </b>
+
+    <p>lien vers <a href="actualite.html" title="Explication du lien">l'actualité</a></p>
+    <p>Envoyez-nous un email à l'adresse <a href="spastore2@free.fr">spastore2@free.fr</a></p>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2 :
+            <ul>
+                <li>Element 1</li>
+                <li>Element 2</li>
+            </ul>
+        </li>
+        <li>Item 3</li>
+    </ol>
+
+    <table width="500" border="1">
+        <caption>Exercice 2 :</caption>
+        <tr>
+            <th width="40%">Un tableau</th>
+            <th width="30%"></th>
+            <th width="30%"></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td> à 6</td>
+            <td>cases</td>
+        </tr>
+
+    </table>
+
+    <ol>
+        <li>1er point
+            <ul>
+                <li>Rubrique 1</li>
+                <li>Rubrique 2</li>
+            </ul>
+        </li>
+        <li>2nd point :</li>
+        <li>3e point
+            <ul>
+                <li>Rubrique 1</li>
+                <li>Rubrique 2</li>
+            </ul>
+        </li>
+    </ol>
+
+    <style>
+      table,
+      td {
+          border: 1px solid #333;
+          height: 25px;
+      }
+      table {
+        table-layout: fixed;
+        width: 40%;
+      }
+    </style>
+  </head>
+  <body>
+
+   
+
+    <p><i>Voici la deuxième partie</i></p>
+
+    <p style="color:red;">Une liste</p>
+
+    <ol>
+      
+      <li>premier point</li>
+      <ul>
+         <li>rubrique 1</li>
+         <li>rubrique 2</li>
+      </ul>
+      <li>2e point</li>
+      <li>3e point</li>
+      <ul>
+        <li>rubrique 1</li>
+        <li>rubrique 2</li>
+     </ul>
+    </ol>
+
+    <h2>Voici la troisième partie : </h2>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>un autre tableau</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <table style="width: 100%">
+              <tbody>
+                <tr><td> </td></tr>
+                <tr><td> </td></tr>
+                <tr><td> </td></tr>
+              </tbody>
+            </table>
+          </td>
+          <td></td>
+          <td>
+            <table style="width: 100%">
+              <tbody>
+                <tr><td> </td><td> </td></tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <style>
+        .ip {
+            min-width: 100px;
+        }
+
+        form {
+            display: inline-block;
+        }
+
+        .dv {
+            float: left;
+            clear: left;
+            width: 100%;
+            padding-bottom: 1em;
+        }
+
+        .lb {
+            float: left;
+            width: 10em;
+            margin-right: 1em;
+            text-align: right;
+        }
+
+        .rdio {
+            display: block;
+            vertical-align: middle;
+        }
+    </style>
+
+
+    <div>
+        <form action="">
+            <div class="dv">
+                <label class="lb" for="pseudo">Votre pseudo : </label>
+                <input class="ip" type="text" name="pseudo" id="pseudo" required>
+            </div>
+
+            <div class="dv">
+                <label class="lb" for="mdp1">Votre mot de passe : </label>
+                <input type="password" name="mdp1" id="mdp1" required>
+            </div>
+
+            <div class="dv">
+                <label class="lb" for="mdp1">Ressaisir votre<br> mot de passe : </label>
+                <input class="ip" type="password" name="mdp1" id="mdp1" required>
+            </div>
+
+            <div class="dv">
+                <label class="lb" for="os-div">OS préféré : </label>
+
+                <div id="os-div" style="float:right;">
+
+                    <input type="radio" id="os1" name="os" value="windowsxp">
+                    <label for="os1">Windows XP</label>
+
+                    <br>
+                    <input type="radio" id="os2" name="os" value="windowsvista">
+                    <label for="os2">Windows Vista</label>
+
+                    <br>
+                    <input type="radio" id="os3" name="os" value="macosx">
+                    <label for="os3">MacOS X</label>
+
+                    <br>
+                    <input type="radio" id="os3" name="os" value="linux">
+                    <label for="os3">Linux</label>
+
+                    <br>
+                    <input type="radio" id="os4" name="os" value="autre">
+                    <label for="os4">Autre</label>
+                </div>
+            </div>
+
+            <div class="dv">
+                <label class="lb" for="os-div">Vous profession : </label>
+      
+                <select multiple>
+                  <option value="c1">Chômeur</option>
+                  <option value="c2">Etudiant</option>
+                  <option value="c3">Fonctionnaire</option>
+                  <option value="c4">Privé</option>
+                  <option value="c5">Retraité</option>
+                </select>
+              </div>
+
+              <div class="dv" style="text-align: center;">
+                <input type="submit" value="S'inscrire !">
+              </div>
+            <p>Vous possédez :</p>
+            <div>
+                <input type="checkbox" id="PC" name="PC" checked>
+                <label for="PC">Un PC</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="laptop" name="laptop">
+                <label for="laptop">Un laptop</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="netbook" name="netbook">
+                <label for="netbook">Un netbook</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="tablette" name="tablette">
+                <label for="tablette">Une tablette</label>
+            </div>
+            
+            <div>
+                <input type="submit" value="S'inscrire !">
+            </div>
+
+            
+        </form>
+        </p>
+        
+        
+           
+           
+
+    </div>
+
+    
+        
+
+</body>
+
+</html>

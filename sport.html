@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"xml:lang="fr"lang="fr">
+  <head>
+    <title>Sport</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+  </head>
+  <style>
+    .ip {
+      min-width: 100px;
+    }
+    form {
+      display: inline-block;
+    }
+    .dv {
+      float: left;
+      clear: left;
+      width: 100%;
+      padding-bottom: 1em;
+    }
+    .lb {
+      float: left;
+      width: 10em;
+      margin-right: 1em;
+      text-align: right;
+    }
+    .rdio {
+      display: block;
+      vertical-align: middle;
+    }
+  </style>
+  <body>
+
+    <div>
+      
+      <form method="GET" action="submit_sport.php">
+        <p class="dv" style="text-align: center;"><b>Sport que tu aimes</b></p>
+
+
+        <div class="dv">
+          <div style="float:right; padding-right: 30px;">
+          
+            <input type="checkbox" id="mat1" name="sport[0]" value="Judo">
+            <label for="mat1">Judo</label>
+
+            <br>
+            <input type="checkbox" id="mat2" name="sport[1]" value="Tennis">
+            <label for="mat2">Tennis</label>
+
+            <br>
+            <input type="checkbox" id="os3" name="sport[2]" value="Piano">
+            <label for="mat3">Piano</label>
+          </div>
+        </div>
+
+        <div class="dv" style="text-align: center;">
+          <input type="submit" value="Chercher">
+        </div>
+      </form>
+
+    </div>
+
+
+  </body>
+</html>
